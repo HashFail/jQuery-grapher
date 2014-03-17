@@ -105,7 +105,7 @@
 		return this.data("grapher").drawPoint(x, y, radius, options);
 	}
 
-	$.fn.destroyGrapher()
+	$.fn.destroyGrapher = function()
 	{
 		var grapher = this.data("grapher");
 		this.data("grapher", undefined);
